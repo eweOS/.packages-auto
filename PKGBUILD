@@ -2,9 +2,9 @@
 
 pkgname=nodejs
 pkgver=22.8.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Evented I/O for V8 javascript'
-arch=('x86_64' 'aarch64' 'riscv64')
+arch=(x86_64 aarch64 riscv64 loongarch64)
 url='https://nodejs.org/'
 license=('MIT')
 depends=('brotli' 'openssl' 'zlib' 'icu' 'libuv' 'libnghttp2' 'c-ares')
