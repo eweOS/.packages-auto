@@ -1,8 +1,8 @@
 # Maintainer: Yukari Chiba <i@0x7f.cc>
 
 pkgname=sway
-pkgver=1.9
-pkgrel=4
+pkgver=1.10
+pkgrel=1
 pkgdesc='Tiling Wayland compositor and replacement for the i3 window manager'
 arch=(x86_64 aarch64 riscv64)
 url='https://swaywm.org/'
@@ -12,7 +12,7 @@ depends=('cairo' 'json-c' 'libinput' 'seatd' 'libxkbcommon' 'mesa' 'pango'
 makedepends=(linux-headers meson wayland-protocols scdoc wlroots0.17-devel)
 backup=('etc/sway/config')
 source=("https://github.com/swaywm/sway/archive/$pkgver.tar.gz")
-sha256sums=('b6e4e8d74af744278201792bcc4447470fcb91e15bbda475c647d475bf8e7b0b')
+sha256sums=('3f15f8f96238d2f7a7b44dbcd132de6c81b2c06cc3b073f195f07f7105072ccf')
 
 build() {
   mkdir -p build
