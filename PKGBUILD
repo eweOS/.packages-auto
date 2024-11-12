@@ -8,10 +8,10 @@ pkgname=(
   networkmanager-docs
 )
 pkgver=1.48.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Network connection manager and user applications"
 url="https://networkmanager.dev/"
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 license=(LGPL-2.1-or-later)
 makedepends=(
   bash
