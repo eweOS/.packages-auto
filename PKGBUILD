@@ -3,11 +3,11 @@
 pkgbase=ReGreet
 pkgname=greetd-regreet
 pkgver=0.1.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Clean and customizable greeter for greetd'
 url="https://github.com/rharish101/$pkgbase"
 license=(GPL3)
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 depends=(greetd gtk4)
 makedepends=(rust git)
 source=("$url/archive/refs/tags/$pkgver.tar.gz" regreet.toml login.defs)
