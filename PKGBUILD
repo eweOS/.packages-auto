@@ -2,10 +2,10 @@
 
 pkgname=pangomm
 pkgver=2.54.0
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ bindings for Pango"
 url="https://www.gtkmm.org/"
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 license=(LGPL)
 depends=(pango glibmm cairomm)
 makedepends=(meson mm-common perl-xml-parser)
