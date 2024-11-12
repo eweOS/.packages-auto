@@ -6,10 +6,10 @@ pkgname=(
   flatpak-docs
 )
 pkgver=1.15.10
-pkgrel=2
+pkgrel=3
 pkgdesc="Linux application sandboxing and distribution framework (formerly xdg-app)"
 url="https://flatpak.org"
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 license=(LGPL)
 depends=(
   appstream
