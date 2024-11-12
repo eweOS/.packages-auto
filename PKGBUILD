@@ -4,10 +4,10 @@ pkgbase=bluez
 pkgname=('bluez' 'bluez-utils' 'bluez-libs' 'bluez-cups' 'bluez-mesh'
          'bluez-obex')
 pkgver=5.78
-pkgrel=2
+pkgrel=3
 pkgdesc='Userspace daemons, utils and libraries of Linux Bluetooth stack'
 url="http://www.bluez.org/"
-arch=('x86_64' 'aarch64' 'riscv64')
+arch=(x86_64 aarch64 riscv64 loongarch64)
 license=('GPL-2.0-only')
 makedepends=('dbus' 'libical' 'alsa-lib' 'json-c' 'ell' 'python-docutils'
              'python-pygments' 'cups' 'autoconf' 'linux-headers' 'glib2'
