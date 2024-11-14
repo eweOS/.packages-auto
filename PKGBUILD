@@ -2,7 +2,7 @@
 
 pkgname=limine
 pkgver=8.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="An advanced, portable, multiprotocol bootloader"
 arch=(x86_64 aarch64 riscv64 loongarch64)
 url="https://limine-bootloader.org/"
@@ -17,7 +17,7 @@ source=(
   limine-install
 )
 sha256sums=('3122945dfc272f0fed5407e152829834651e3186fb29ae14580b71f51d5e491f'
-            '4133cca3df6955b27e47e71400b5748e40a7dc3f3d4eaa664a7257d001ff9fdb'
+            '7952ba8555a3b82725cd8f7255a91f8cf363e8cfd99d86aa7438638252239665'
             'b1d39bd3cc56b4d033f2ffe3c6f1eda8cbb0eb4788626e5041fcb56fa961ea86'
             'f722aacb1e5865489483c14b950900998241fe6558e58875b1119579ef91a5e0'
             '996416f738c981e2d04af00407adb7bc1e95a5acc5b11f65595d202cd6420290')

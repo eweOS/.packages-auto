@@ -65,14 +65,15 @@ EOF
   fi
 }
 
-for kernel in $(find /usr/lib/modules/* -maxdepth 0 | sort -r) ; do
-  if ! pacman -Qqo "${kernel}" > /dev/null 2>&1; then
+for kernelfile in $(find /usr/lib/modules/*/vmlinuz -maxdepth 0 | sort -r) ; do
+  kernel=$(dirname $kernelfile)
+  if ! pacman -Qqo "${kernelfile}" > /dev/null 2>&1; then
     # if pkgbase does not belong to any package then skip this kernel
     continue
   fi
-  pkgbase=$(pacman -Qqo "${kernel}" 2>/dev/null)
+  pkgbase=$(pacman -Qqo "${kernelfile}" 2>/dev/null)
   if [ "$LIMINE_AUTO_COPY_KERNEL" == "1" ]; then
-    install -Dm644 "${kernel}/vmlinuz" "/boot/vmlinuz-${pkgbase}"
+    install -Dm644 "${kernelfile}" "/boot/vmlinuz-${pkgbase}"
   fi
   if [ "$LIMINE_AUTO_GEN_INITRD" == "1" ]; then
     tinyramfs -f -k ${kernel##/usr/lib/modules/} /boot/initramfs-${pkgbase}.img
