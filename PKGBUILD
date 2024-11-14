@@ -1,8 +1,8 @@
 # Maintainer: Yukari Chiba <i@0x7f.cc>
 
 pkgname=pam
-pkgver=1.6.1
-pkgrel=3
+pkgver=1.7.0
+pkgrel=1
 pkgdesc="PAM (Pluggable Authentication Modules) library"
 arch=(x86_64 aarch64 riscv64 loongarch64)
 license=('GPL2')
@@ -15,7 +15,7 @@ source=(
   auth.pam
   login.pam
 )
-sha256sums=('f8923c740159052d719dbfc2a2f81942d68dd34fcaf61c706a02c9b80feeef8e'
+sha256sums=('57dcd7a6b966ecd5bbd95e1d11173734691e16b68692fa59661cdae9b13b1697'
             'd5ed59ec2157c19c87964a162f7ca84d53c19fb2bd68d3fbc1671ba8d906346f'
             'ab40a73fd3aa69f2212785e149b8c3fd112328dd152e341052145004e76d5859'
             '2462e923735fc366f57076878f157422bcb10c660a7edd44056651ebbe2cf845')
