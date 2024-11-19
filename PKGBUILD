@@ -1,8 +1,8 @@
 # Maintainer: Yukari Chiba <i@0x7f.cc>
 
 pkgname=neatvnc
-pkgver=0.8.1
-pkgrel=3
+pkgver=0.9.0
+pkgrel=1
 pkgdesc='Fast and neat VNC server library'
 arch=(x86_64 aarch64 riscv64 loongarch64)
 url=https://github.com/any1/neatvnc
@@ -25,7 +25,7 @@ makedepends=(
 )
 provides=(libneatvnc.so)
 source=(git+https://github.com/any1/neatvnc.git#tag=v$pkgver ffmpeg-7.1.patch)
-sha256sums=('57a3a0a2469b93acf2a3afad2feb703cc7542b75c3e52de04d8d589549f79da7'
+sha256sums=('3e02b686b6473fd12d93118de998a535d1a41a4325fbe8aed1f5b14915cdcd02'
             '56281ca07173b9b30862d0a00e543c3599f9a22f04112666f3dbd76bff495c8d')
 
 prepare() {
