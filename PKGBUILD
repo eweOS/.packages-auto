@@ -11,7 +11,7 @@ pkgname=(
 )
 pkgdesc="An open-source implementation of the OpenGL specification"
 pkgver=24.2.7
-pkgrel=2
+pkgrel=3
 arch=(x86_64 aarch64 riscv64 loongarch64)
 depends=('libglvnd' 'libelf' 'zstd' 'libdrm' 'llvm')
 makedepends=(
@@ -103,6 +103,8 @@ package_mesa()
     libva-mesa-driver mesa-libgl
     libva-driver opengl-driver
   )
+  conflicts=(libva-mesa-driver)
+  replaces=(libva-mesa-driver)
 
   DESTDIR="${pkgdir}" meson install -C build
 
