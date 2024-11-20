@@ -6,7 +6,7 @@ pkgname=(gstreamer gstreamer-devel gstreamer-vaapi
 	 gst-plugin-gtk gst-plugin-qml6 gst-plugin-qsv gst-plugin-va
 	 gst-libav gst-rtsp-server gst-editing-services gst-python)
 pkgver=1.24.9
-pkgrel=1
+pkgrel=2
 pkgdesc='GStreamer multimedia framework'
 url='https://gstreamer.freedesktop.org/'
 arch=(x86_64 aarch64 riscv64 loongarch64)
@@ -379,7 +379,7 @@ package_gstreamer-devel() {
 
 package_gst-plugins-base() {
 	pkgdesc+=" - base plugins"
-	provides=(gst-plugins-base-libs)
+	provides=(gst-plugins-base-libs "gst-plugins-base-libs=$pkgver-$pkgrel")
 	depends=(musl gstreamer="$pkgver-$pkgrel" libdrm libglvnd glib wayland
 		 zlib-ng)
 	depends+=(alsa-lib cairo graphene harfbuzz libjpeg libogg libopus
@@ -399,7 +399,7 @@ package_gst-plugins-good() {
 package_gst-plugins-bad() {
 	pkgdesc+=" - bad plugins"
 	depends=(${_plugin_depends[*]})
-	provides=(gst-plugins-bad-libs)
+	provides=(gst-plugins-bad-libs "gst-plugins-bad-libs=$pkgver-$pkgrel")
 	depends+=(llvm-libs musl libdrm glib libva vulkan-icd-loader wayland
 		  zlib-ng)
 	depends+=(openexr imath libaom libass at-spi2-core libbz2 cairo openssl
