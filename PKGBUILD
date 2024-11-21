@@ -1,7 +1,7 @@
 # Maintainer: Yao Zi <ziyao@disroot.org>
 
 pkgname=mousepad
-pkgver=0.6.2
+pkgver=0.6.3
 pkgrel=1
 pkgdesc='A simple text editor for the Xfce desktop environment.'
 url='https://docs.xfce.org/apps/mousepad/start'
@@ -11,7 +11,7 @@ license=(GPL-2.0-or-later)
 depends=(glib gtk3 gtksourceview4)
 makedepends=(xfce4-dev-tools)
 source=("https://archive.xfce.org/src/apps/mousepad/${pkgver%.*}/mousepad-$pkgver.tar.bz2")
-sha256sums=('e7cacb3b8cb1cd689e6341484691069e73032810ca51fc747536fc36eb18d19d')
+sha256sums=('2ff162c185f18014ab9c82c2ac2dfce4fba20eb0005e7690ee27f00b9cb929b9')
 
 build () {
 	cd mousepad-$pkgver
