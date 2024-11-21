@@ -2,10 +2,10 @@
 
 pkgname=libical
 pkgver=3.0.18
-pkgrel=2
+pkgrel=3
 pkgdesc="Implementation of iCalendar protocols and data formats"
 url="https://github.com/libical/libical"
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 license=("MPL-2.0 OR LGPL-2.1-only")
 depends=(
   glib2
