@@ -2,7 +2,7 @@
 
 pkgname=python-wrapt
 pkgver=1.16.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A Python module for decorators, wrappers and monkey patching"
 arch=(x86_64 aarch64 riscv64 loongarch64)
 url="https://pypi.python.org/pypi/wrapt"
@@ -10,8 +10,13 @@ license=("BSD-2-Clause")
 depends=('python')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 checkdepends=('python-pytest')
-source=("https://github.com/GrahamDumpleton/wrapt/archive/refs/tags/${pkgver}.tar.gz")
-sha512sums=('65bdda3b6580748ceb720e8fc1a6b05832a355d541aa650bc87052f3aa8793d03d29a080b79eceb16392e297aed8f11a283e36f5f40a0db614b409b1dc2b6c9c')
+source=("https://github.com/GrahamDumpleton/wrapt/archive/refs/tags/${pkgver}.tar.gz" fix-py313-test.patch)
+sha512sums=('65bdda3b6580748ceb720e8fc1a6b05832a355d541aa650bc87052f3aa8793d03d29a080b79eceb16392e297aed8f11a283e36f5f40a0db614b409b1dc2b6c9c'
+            '0aaa87158e43ac6cca432634ad806675f6c3bbe017118bbbe4ed801b0f0d711dc6f1e69a14f5b663d57e9fbf11036faec3d9f5fd33fed860b6c2e142c02687b3')
+
+prepare() {
+  _patch_ wrapt-$pkgver
+}
 
 build() {
   cd wrapt-$pkgver
