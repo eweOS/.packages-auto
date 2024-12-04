@@ -2,7 +2,7 @@
 
 pkgname=python-argcomplete
 pkgver=3.3.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Python and tab completion, better together.'
 url='https://kislyuk.github.io/argcomplete/'
 arch=(any)
