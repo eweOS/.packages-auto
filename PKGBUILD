@@ -2,10 +2,10 @@
 
 pkgname=vulkan-tools
 pkgver=1.3.290
-pkgrel=1
+pkgrel=2
 pkgdesc='Vulkan Development Tools'
 url='https://github.com/KhronosGroup/Vulkan-Tools/'
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 license=(Apache-2.0)
 depends=(wayland libvulkan.so)
 makedepends=(cmake python vulkan-headers vulkan-icd-loader wayland-protocols
