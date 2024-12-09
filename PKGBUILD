@@ -2,11 +2,11 @@
 
 pkgname=libgee
 pkgver=0.20.6
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection library providing GObject-based interfaces and classes for commonly used data structures"
 url="https://gitlab.gnome.org/GNOME/libgee"
 license=(LGPL2.1)
-arch=(x86_64 aarch64 riscv64)
+arch=(x86_64 aarch64 riscv64 loongarch64)
 depends=(glib2)
 makedepends=(gobject-introspection vala autoconf-archive git)
 source=("git+https://gitlab.gnome.org/GNOME/libgee.git#tag=$pkgver")
