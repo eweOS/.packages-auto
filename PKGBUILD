@@ -1,8 +1,8 @@
 # Maintainer: Yukari Chiba <i@0x7f.cc>
 
 pkgname=pango
-pkgver=1.54.0
-pkgrel=2
+pkgver=1.55.5
+pkgrel=1
 pkgdesc="A library for layout and rendering of text"
 url="https://www.pango.org/"
 arch=(x86_64 aarch64 riscv64 loongarch64)
@@ -11,7 +11,7 @@ depends=(cairo glib fribidi harfbuzz)
 makedepends=(meson gobject-introspection)
 provides=(libpango-1.0.so libpangocairo-1.0.so libpangoft2-1.0.so)
 source=("https://gitlab.gnome.org/GNOME/$pkgname/-/archive/$pkgver/$pkgname-$pkgver.tar.gz")
-sha256sums=('317f366bb255282d3e64ccf95b1d57cbea8636578b199c158235e1f257e5167f')
+sha256sums=('889bd6d3472e3013f89a6435d9f718540c92ce0dc3a9154189a010426bc4ffa7')
 
 build() {
   ewe-meson $pkgname-$pkgver build \
